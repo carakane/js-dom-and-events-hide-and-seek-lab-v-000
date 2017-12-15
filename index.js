@@ -7,14 +7,14 @@ function nestedTarget() {
 }
 
 function deepestChild() {
-  let node = document.getElementById("grand-node")
-  let nextNode = node.children[0]
+  let list = document.getElementById("grand-node")
+  let listChild = list.children[0]
 
-  while (nextNode) {
-    node = nextNode
-    nextNode = node.children[0]
-  }
-  return node
+  while (listChild) {
+    list = listChild
+    listChild = list.children[0]
+}
+  return list
 }
 
 function increaseRankBy(n) {
