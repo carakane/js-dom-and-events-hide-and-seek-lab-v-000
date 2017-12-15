@@ -13,7 +13,8 @@ function deepestChild() {
   while (listChild) {
     list = listChild
     listChild = list.children[0]
-}
+  }
+  
   return list
 }
 
